@@ -7,3 +7,4 @@ df.head()
 df.shape
 
 ## Check the datatype of the csv
+df.info()
