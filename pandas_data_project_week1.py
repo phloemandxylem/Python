@@ -22,3 +22,8 @@ print('Minimum time: ', min)
 print('Average time: ', mean)
 print('Maximum time: ', max)
 
+## how many orders are not rated?
+df['rating'].value_counts()
+
+
+
