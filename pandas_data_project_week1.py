@@ -26,4 +26,5 @@ print('Maximum time: ', max)
 df['rating'].value_counts()
 
 
-
+## create a histogram plot for univariate analysis
+sns.histplot(df, x = 'cost_of_the_order', hue=df['day_of_the_week'], kde=True)
