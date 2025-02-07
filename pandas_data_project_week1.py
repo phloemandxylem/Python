@@ -25,6 +25,13 @@ print('Maximum time: ', max)
 ## how many orders are not rated?
 df['rating'].value_counts()
 
-
 ## create a histogram plot for univariate analysis
 sns.histplot(df, x = 'cost_of_the_order', hue=df['day_of_the_week'], kde=True)
+
+## What percentage of the orders cost more than 20 dollars? 
+## 1. Count the elements within a column that > 20 dollars.
+## 2. Find the total columns
+## 3. Find the percentage for dividing #1 / #2 
+
+
+
