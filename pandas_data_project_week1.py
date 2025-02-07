@@ -35,3 +35,5 @@ sns.histplot(df, x = 'cost_of_the_order', hue=df['day_of_the_week'], kde=True)
 
 
 
+
+
