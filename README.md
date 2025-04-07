@@ -1,3 +1,3 @@
- #Python
+# Python Practice
 
-##This is a place to practice Python. 
+This is a place to ~~build my rocketship~~ practice Python. 
