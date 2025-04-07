@@ -11,7 +11,7 @@ areas = [hall, kit, liv, bed, bath]
 # Print list areas
 print(areas)
 
-#Update the keys of a list areas
+# Update the keys of a list areas
 areas = ["hallway", hall, "kitchen", kit, "living room", liv, "bedroom", bed, "bathroom", bath] 
 print(areas) 
 
@@ -22,3 +22,30 @@ house = [["hallway", hall],
          ["bedroom", bed], 
          ["bathroom", bath]]
 print(house)
+
+# Subsetting lists
+# Print out the second element from the list
+print(areas[1])
+
+#Print out the last element from areas
+print(areas[-1])
+
+#Print out the area of the living room
+print(areas[5])
+
+#Slicing and dicing lists - selecting multiple elements
+#Create a list called downstairs that contains just the first 6 elements of the areas list (the 6th will not be included) 
+
+downstairs=areas[0:6]
+
+# Subsetting lists of lists
+# Subset the house list to get the float 9.5
+
+house[4][1]
+
+#Manipulating Lists
+
+
+
+
+
