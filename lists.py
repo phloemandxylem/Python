@@ -57,6 +57,23 @@ outhouse = 22.1
 areas_2 = areas + ["outhouse", outhouse]
 
 # Delete list elements
+hall = 11.25
+kit = 18.0
+liv = 20.0
+bed = 10.75
+bath = 9.50
+poolhouse = 22.1
+
+areas = ["hallway", hall, "kitchen", kit, "living room", liv, "bedroom", bed, "bathroom", bath, "poolhouse", poolhouse] 
+del areas[10:12] # deletes element 10 and 11 
+
+# Prevent changes in lists
+areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+areas_copy = list(areas) # create a copy of the list that can be manipulated
+areas_copy[0] = 5.0
+
+print(areas)
+
 
 
 
