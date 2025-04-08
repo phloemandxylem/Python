@@ -23,7 +23,6 @@ print(areas)
 areas.reverse()
 print(areas)
     
-#Use the .reverse() method to reverse the order of the elements in areas. Print out areas once more.
 
 
 
