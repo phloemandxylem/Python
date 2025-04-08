@@ -53,7 +53,14 @@ areas[4] = "parlour"
 # Extend a list 
 # Use the + operator to paste the list ["outhouse", 22.1] to the end of the areas list. Store the resulting list as areas_2.
 
-areas_2 = areas + ["outhouse", 22.1]
+outhouse = 22.1
+areas_2 = areas + ["outhouse", outhouse]
+
+# Delete list elements
+
+
+
+
 
 
 
