@@ -11,7 +11,7 @@ areas = [hall, kit, liv, bed, bath]
 # Print list areas
 print(areas)
 
-# Update the keys of a list areas
+# Provide keys of a list areas
 areas = ["hallway", hall, "kitchen", kit, "living room", liv, "bedroom", bed, "bathroom", bath] 
 print(areas) 
 
@@ -27,14 +27,14 @@ print(house)
 # Print out the second element from the list
 print(areas[1])
 
-#Print out the last element from areas
+# Print out the last element from areas
 print(areas[-1])
 
-#Print out the area of the living room
+# Print out the area of the living room
 print(areas[5])
 
-#Slicing and dicing lists - selecting multiple elements
-#Create a list called downstairs that contains just the first 6 elements of the areas list (the 6th will not be included) 
+# Slicing and dicing lists - selecting multiple elements
+# Create a list called downstairs that contains just the first 6 elements of the areas list (the 6th will not be included) 
 
 downstairs=areas[0:6]
 
@@ -43,7 +43,18 @@ downstairs=areas[0:6]
 
 house[4][1]
 
-#Manipulating Lists
+# Manipulating Lists
+# Update the area of the bathroom to be 10.50 square meters instead of 9.50 using negative indexing and update the living room string to parlour
+
+areas = ["hallway", hall, "kitchen", kit, "living room", liv, "bedroom", bed, "bathroom", bath] 
+areas[-1] = 10.50
+areas[4] = "parlour"
+
+# Extend a list 
+# Use the + operator to paste the list ["outhouse", 22.1] to the end of the areas list. Store the resulting list as areas_2.
+
+areas_2 = areas + ["outhouse", 22.1]
+
 
 
 
