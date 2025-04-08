@@ -13,8 +13,3 @@ A = math.pi * r ** 2
 print("Circumference: " + str(C))
 print("Area: " + str(A))
 
-#Perform a selective import from the math package where you only import the pi function
-from math import pi 
-r = 192500
-dist = r * radians(12)
-print(dist)
