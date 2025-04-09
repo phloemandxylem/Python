@@ -21,5 +21,7 @@ np_height_in = np.array(height_in)
 np_height_in_m = np_height_in * 0.0254
 print(np_height_in_m)
 
+#Subsetting numpy arrays
+
 
 
