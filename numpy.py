@@ -35,4 +35,20 @@ np_weight_lb = np_baseball[:,1]
 #Select the height (first column) of the 124th baseball player in np_baseball and print it out.
 print(np_baseball[123, 0])
 
+#2D Arithmetic----------------------------------------------------------------
+
+#Create np_baseball (3cols)
+np_baseball = np.array(baseball)
+
+#Print out addition of np_baseball and updated
+print(np_baseball + updated)
+
+#Create numpy array: conversion
+conversion = [0.0254, 0.453592, 1]
+
+#Print out product of np_baseball and conversion
+print(np_baseball*conversion)
+
+
+
 
