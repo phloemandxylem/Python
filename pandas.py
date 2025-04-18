@@ -32,10 +32,19 @@ homelessness_reg_fam = homelessness.sort_values(["region", "family_members"], as
 print(homeless_reg_fam.head())
 
 # Subsetting ---------------------------------------------------------------------------
-# Select the state and family_members columns
+#Subsetting columns
+#Select the state and family_members columns
 state_fam = homelessness[["state", "family_members"]]
 
 print(state_fam.head())
+
+#Subsetting row values
+# Filter for multiple row values
+df2 = homelessness[(homelessness["family_members"] < 1000) & (homelessness["region"] == "Pacific")]
+
+print(df2)
+
+
 
 
 
