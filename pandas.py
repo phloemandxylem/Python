@@ -31,5 +31,13 @@ homelessness_reg_fam = homelessness.sort_values(["region", "family_members"], as
 
 print(homeless_reg_fam.head())
 
+# Subsetting ---------------------------------------------------------------------------
+# Select the state and family_members columns
+state_fam = homelessness[["state", "family_members"]]
+
+print(state_fam.head())
+
+
+
 
 
