@@ -21,9 +21,11 @@ print(homelessness.column)
 print(homelessness.index)
 
 # Sort homelessness by individuals
-homelessness_ind = homelessness.sort_values("individuals")
+homelessness_ind = homelessness.sort_values("individuals", ascending=False)
 
 # Print the top few rows
 print(homelessness_ind.head())
+
+
 
 
