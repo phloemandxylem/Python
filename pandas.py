@@ -51,6 +51,9 @@ mojave_homelessness = homelessness[homelessness[homelessness["state"].isin(canu)
 
 print(mojave_homelessness)
 
+#Add total col as sum of individuals and family_members
+homelessness["total"] = homelessness["individuals] + homelessness["family_members"]
+homelessness["p_homeless"] = homelessness["total"] / homelessness["state_pop"]
 
 
 
