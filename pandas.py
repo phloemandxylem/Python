@@ -57,5 +57,12 @@ homelessness["p_homeless"] = homelessness["total"] / homelessness["state_pop"]
 
 print(homelessness)
 
+#Create indiv_per_10k col as homeless individuals per 10k state pop
+homelessness["indiv_per_10k"] = 10000 * homelessness["individuals"] / homelessness["state_pop"]
 
+#Subset rows for indiv_per_10k greater than 20
+high_homelessness_srt = homelessness.sort_values(["indiv_per_10k"]), ascending = [TRUE])
+
+#From high_homelessness_art, select the state and indiv_per_10k cols
+result = homelessness[["state", "indiv_per_10k"]]
 
