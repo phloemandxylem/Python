@@ -44,8 +44,12 @@ df2 = homelessness[(homelessness["family_members"] < 1000) & (homelessness["regi
 
 print(df2)
 
+#Subsetting rows by categorical variables
+#Filter homelessness for cases where the USA census state is in the list of Mojave states, canu, assigning to mojave_homelessness
+canu = ["California", "Arizona", "Nevada", "Utah"]
+mojave_homelessness = homelessness[homelessness[homelessness["state"].isin(canu)]
 
-
+print(mojave_homelessness)
 
 
 
