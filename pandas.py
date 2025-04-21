@@ -27,7 +27,7 @@ homelessness_ind = homelessness.sort_values("individuals", ascending=False)
 print(homelessness_ind.head())
 
 # Print homelessness by region, then descending family members
-homelessness_reg_fam = homelessness.sort_values(["region", "family_members"], ascending=[True, False])
+homelessness_reg_fam = homelessness.sort_values(["region", "family_members"], ascending=[True,False])
 
 print(homeless_reg_fam.head())
 
@@ -61,7 +61,7 @@ print(homelessness)
 homelessness["indiv_per_10k"] = 10000 * homelessness["individuals"] / homelessness["state_pop"]
 
 #Subset rows for indiv_per_10k greater than 20
-high_homelessness_srt = homelessness.sort_values(["indiv_per_10k"]), ascending = [TRUE])
+high_homelessness_srt = homelessness.sort_values(["indiv_per_10k"] > 20)
 
 #From high_homelessness_art, select the state and indiv_per_10k cols
 result = homelessness[["state", "indiv_per_10k"]]
