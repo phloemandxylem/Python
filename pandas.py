@@ -55,5 +55,7 @@ print(mojave_homelessness)
 homelessness["total"] = homelessness["individuals] + homelessness["family_members"]
 homelessness["p_homeless"] = homelessness["total"] / homelessness["state_pop"]
 
+print(homelessness)
+
 
 
