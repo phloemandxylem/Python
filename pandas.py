@@ -66,3 +66,16 @@ high_homelessness_srt = homelessness.sort_values(["indiv_per_10k"] > 20)
 #From high_homelessness_art, select the state and indiv_per_10k cols
 result = homelessness[["state", "indiv_per_10k"]]
 
+#Print the head of the sales DataFrame
+print(sales.head())
+
+#Print the info about the sales DataFrame
+print(sales.info())
+
+#Print the mean of weekly_sales
+print(sales["weekly_sales"].mean())
+
+#Print the median of weekly_sales
+print(sales["weekly_sales"].median())
+
+
