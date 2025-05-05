@@ -52,7 +52,7 @@ mojave_homelessness = homelessness[homelessness[homelessness["state"].isin(canu)
 print(mojave_homelessness)
 
 #Add total col as sum of individuals and family_members
-homelessness["total"] = homelessness["individuals] + homelessness["family_members"]
+homelessness["total"] = homelessness["individuals"] + homelessness["family_members"]
 homelessness["p_homeless"] = homelessness["total"] / homelessness["state_pop"]
 
 print(homelessness)
@@ -77,5 +77,9 @@ print(sales["weekly_sales"].mean())
 
 #Print the median of weekly_sales
 print(sales["weekly_sales"].median())
+
+#New Columns-------------------------------------------------------------------------
+#Create indiv_per_10k col as homeless individuals per 10k state pop
+homelessness["indiv_per_10k"] = 10000 * homelessness["individuals"] / homelessness["state_pop"]
 
 
